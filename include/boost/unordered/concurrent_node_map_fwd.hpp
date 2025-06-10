@@ -20,7 +20,7 @@
 #include <memory>
 
 #ifndef BOOST_NO_CXX17_HDR_MEMORY_RESOURCE
-#include <memory_resource>
+#include <boost/memory_resource.hpp>
 #endif
 
 namespace boost {
