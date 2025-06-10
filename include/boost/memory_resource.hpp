@@ -4,8 +4,12 @@
 #  include <memory_resource>
 #else
 #  include <experimental/memory_resource>
-#  include <string>
-#  include <unordered_map>
-#  include <unordered_set>
-#  include <vector>
+
+namespace std::pmr {
+
+template <typename Key>
+using polymorphic_allocator = experimental::pmr::polymorphic_allocator<Key>;
+
+};
+
 #endif
